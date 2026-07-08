@@ -1,0 +1,7 @@
+class IplFinals
+{
+public static void main (String args[])
+{
+System.out.prinln("Ee sala cup namadhe");
+}
+}
