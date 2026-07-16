@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
 public class CombinationArray {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+	{
         Scanner in = new Scanner(System.in);
         
-        int[] numbers = new int[3];
+        int[] numbers = new int[3];// initializing the array
         
         System.out.println("Enter 3 numbers:");
-        numbers[0] = in.nextInt();
+        numbers[0] = in.nextInt();// getting user input
         numbers[1] = in.nextInt();
         numbers[2] = in.nextInt();
 
