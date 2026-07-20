@@ -1,5 +1,5 @@
 
-
+import java.util.*;
 class Evenodd {
     public static void main(String[] args) {
         // Create a Scanner object to read user input
