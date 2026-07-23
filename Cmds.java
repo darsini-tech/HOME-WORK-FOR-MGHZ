@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class Cmds
 {
-    // Global Scanner inside the class so all non-static methods can use it
+
     Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args)
     {
-        // Object creation to access non-static runner method
+        // Object creation 
         Cmds obj = new Cmds();
         obj.runMenu();
     }
 
-    // Single non-static method containing the core loop and menu structure
+   
     public void runMenu()
     {
         System.out.print("Enter array size: ");
