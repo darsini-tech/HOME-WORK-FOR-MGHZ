@@ -7,6 +7,7 @@ public class BubbleSortpgm
 	{
         int n = arr.length;
         int pass = 0;
+		// as per the image of which sir shown today in class
 
         for (int i = 0; i < n - 1; i++)
 			{
