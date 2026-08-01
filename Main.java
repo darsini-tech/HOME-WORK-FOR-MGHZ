@@ -1,16 +1,17 @@
 
-package abstractionn;
+package Interface;
 
 
-public class Main { 
-    public static void main(String[] args) { 
-        // Fixed: Enclosed literal text inside double quotes ""
-        FulltimeEmployee obj = new FulltimeEmployee("Darsini", 5000.0); 
-        PartimeEmployee obi = new PartimeEmployee("Sai Sharvesh", 12, 30.0); 
+public class Main {
+    public static void main(String[] args) {
+        double amount = 2500.50; 
 
-        System.out.println(" *********** Employee Salary Details *******"); 
-        obj.displayEmployee(); 
-        System.out.println("--------------------------------------------");
-        obi.displayEmployee(); 
-    } 
+        System.out.println("Initiating transaction for amount: ₹" + amount + "\n");
+
+        Payment creditCard = new CreditCardPayment();
+        Payment upi = new UpiPayment();
+
+        creditCard.pay(amount);
+        upi.pay(amount);
+    }
 }
