@@ -1,11 +1,18 @@
 
-package Single;
+package abstractionn;
 
+abstract class Employee { 
+    String name; 
 
-public class Employee extends Person1 {
-    void salary()
-    {
-        System.out.println("Salary: 1 Milion");
-    }
-    
+    // Constructor
+    Employee(String name) { 
+        this.name = name; 
+    } 
+
+    abstract double calculateSalary(); 
+
+    void displayEmployee() { 
+        System.out.println("Employee Name: " + name); 
+        System.out.println("Calculated Salary: " + calculateSalary()); 
+    } 
 }
